@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsFillStarFill } from "react-icons/bs";
 import './Product.css';
 import { useStateValue } from "./Stateprovider";
 
@@ -33,14 +34,16 @@ function Product({ id, title, image, price, rating, dollar }) {
 					{Array(rating)
 						.fill()
 						.map(() => (
-							<p>🌟</p>
+							<p className="star">
+								<BsFillStarFill />
+							</p>
 						))}
 				</div>
-            </div>
-              
-      {/* <img src={image} alt="" /> */}
+			</div>
 
-      <button onClick={addToBasket}>Add to Basket</button>
+			{/* <img src={image} alt="" /> */}
+
+			<button onClick={addToBasket}>Add to Basket</button>
 		</div>
 	);
 }

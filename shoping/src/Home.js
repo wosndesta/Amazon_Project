@@ -1,16 +1,76 @@
 import React from 'react';
 import './Home.css';
+import  './Items';
+
+import Carousel from "react-elastic-carousel";
+
+import './Button'
+
+
 import Product from './Product';
+import Item from './Item'
 
 function Home() {
+
     return (
 			<div className="home">
 				<div className="home__container">
-					<img
-						className="home__image"
-						src="https://m.media-amazon.com/images/I/61FkG0lVNdL._SX3000_.jpg"
-						alt=""
-					/>
+					<div className="Carousel">
+						<Carousel
+							enableAutoPlay
+							autoPlaySpeed={3900}
+							// autoPlay
+							infiniteLoop
+							itemsToShow={1}
+							pagination={true}
+							itemPadding={[0, -30]}
+
+							// showArrows={false}
+						>
+							<Item>
+								<img
+									src="https://m.media-amazon.com/images/I/61FkG0lVNdL._SX3000_.jpg"
+									alt=""
+								/>
+							</Item>
+							<Item>
+								<img
+									src="https://m.media-amazon.com/images/I/61XeI2ouz6L._SX3000_.jpg"
+									alt=""
+								/>
+							</Item>
+							<Item>
+								<img
+									src="https://m.media-amazon.com/images/I/615K5ffvbGL._SX3740_.jpg"
+									alt=""
+								/>
+							</Item>
+							<Item>
+								<img
+									src="https://m.media-amazon.com/images/I/71PiGY+Y6ML._SX3000_.jpg"
+									alt=""
+								/>
+							</Item>
+							<Item>
+								<img
+									src="https://m.media-amazon.com/images/I/71WBRk5SWhL._SX3740_.jpg"
+									alt=""
+								/>
+							</Item>
+							<Item>
+								<img
+									src="https://m.media-amazon.com/images/I/71pRV2VfXRL._SX3740_.jpg"
+									alt=""
+								/>
+							</Item>
+							<Item>
+								<img
+									src="https://m.media-amazon.com/images/I/61pg+50rEtL._SX3000_.jpg"
+									alt=""
+								/>
+							</Item>
+						</Carousel>
+					</div>
 					<div className="home__row">
 						<Product
 							image="https://m.media-amazon.com/images/I/61y46d2qEPL._AC_SX425_.jpg"
@@ -83,6 +143,7 @@ function Home() {
 							image="https://m.media-amazon.com/images/I/61K+PRZ1MiL._AC_UL320_.jpg"
 							id="3245789"
 							title=" Canada Goose Carson Down Parka  "
+							dollar={"$"}
 							price={1196}
 							rating={5}
 						/>
@@ -90,20 +151,23 @@ function Home() {
 							image="https://m.media-amazon.com/images/I/71vz+dj2PPL._AC_SX425_.jpg"
 							id="98712098"
 							title=" 2020 Newest HP Envy 2-in-1 Laptop, 15.6 IPS FHD Touch Screen, Backlit Keyboard, Amazon Alexa, Windows 10, Black"
+							dollar={"$"}
 							price={1169.99}
 							rating={5}
 						/>
 						<Product
 							image="https://m.media-amazon.com/images/I/812wiz16nlL._AC_SX450_.jpg"
 							id="56720098"
-							title="TOYMANY 8PCS Merino Sheep Figures Farm Animal Toy Figurines - Plastic Forest Animal Figurines for Kids Boys Girls Age 3-5 6-12"
+							title="Sony X85J 65 Inch TV: 4K Ultra HD LED Smart Google TV with Native 120HZ Refresh Rate"
+							dollar={"$"}
 							price={1098}
 							rating={4}
 						/>
 						<Product
 							image="https://m.media-amazon.com/images/I/81UH+te8rNL._AC_SY450_.jpg"
 							id="546544677"
-							title="Sony X85J 65 Inch TV: 4K Ultra HD LED Smart Google TV with Native 120HZ Refresh Rate"
+							title="TOYMANY 8PCS Merino Sheep Figures Farm Animal Toy Figurines - Plastic Forest Animal Figurines for Kids Boys Girls Age 3-5 6-12"
+							dollar={"$"}
 							price={11.66}
 							rating={3}
 						/>

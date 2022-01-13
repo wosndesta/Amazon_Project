@@ -1,6 +1,7 @@
 import React from 'react'
 import './Checkout.css'
 import './Checkoutproduct.css'
+import { BsFillStarFill } from "react-icons/bs";
 import {useStateValue} from './Stateprovider'
 
 function Checkoutproduct({ id, image, title, price, rating, hideButton }) {
@@ -25,7 +26,9 @@ function Checkoutproduct({ id, image, title, price, rating, hideButton }) {
 					{Array(rating)
 						.fill()
 						.map((_, i) => (
-							<p key={i}>🌟</p>
+							<p className="star"key={i}>
+								<BsFillStarFill />
+							</p>
 						))}
 				</div>
 				{!hideButton && (

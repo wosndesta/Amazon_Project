@@ -17,13 +17,15 @@ function Header() {
 
 	return (
 		<div className="header">
-			<Link to="/">
-				<img
-					className="header__logo"
-					src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-				/>
-			</Link>
-			<h3 className="prime">prime</h3>
+			
+				<Link to="/">
+					<img
+						className="header__logo"
+						src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+					/>
+				</Link>
+				<h3 className="prime">prime</h3>
+		
 			<div className="header__search">
 				<input className="header__searchInput" type="text" />
 				<SearchIcon className="header__searchIcon" />

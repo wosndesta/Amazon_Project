@@ -27,6 +27,7 @@
 font-size: 14px;
 color:rgb(7, 131, 161);
 font-weight:500;
+display:block;
 
 
 
@@ -51,4 +52,9 @@ font-weight:500;
 }
 .product:hover {
   transform: scale(1.05);
+}
+p.star{
+  color: rgb(228, 137, 18);
+  margin-top: 5px;;
+ 
 }
