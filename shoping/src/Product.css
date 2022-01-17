@@ -40,10 +40,11 @@ display:block;
   margin-bottom: 15px;
 }
 .product > button {
-  background: #f0c14b;
+  background: #f5c95bbd;
+  border-radius: 3px;
   border: 1px solid;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+  border-color: #d6ba72 #9c7e31 #41320c;
   color: #111;
   display:block;
 }

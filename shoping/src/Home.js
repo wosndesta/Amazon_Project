@@ -23,7 +23,7 @@ function Home() {
 							infiniteLoop
 							itemsToShow={1}
 							pagination={true}
-							itemPadding={[0, -30]}
+							// itemPadding={[0, -30]}
 
 							// showArrows={false}
 						>
